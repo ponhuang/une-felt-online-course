@@ -1,0 +1,11 @@
+{
+  "name": "online-course-webdesign",
+  "version": "1.0.0",
+  "description": "une felt online course website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Pon Huang",
+  "license": "ISC"
+}
