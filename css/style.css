@@ -1,0 +1,283 @@
+/*---------- FONT ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Frank+Ruhl+Libre:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+/*---------- DESIGN STYLE ----------*/
+/*---------- FONT ----------*/
+/*---------- COLOR ----------*/
+.icon {
+  font-size: 2.5rem; }
+
+.nav__items {
+  list-style: none; }
+
+.nav__links {
+  text-decoration: none;
+  color: #2a2a2a;
+  cursor: pointer; }
+  .nav__links:hover {
+    color: #f14949; }
+
+/*---------- BUTTONS ----------*/
+.btn {
+  background: #aaa;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease; }
+  .btn:hover {
+    background: #2a2a2a;
+    color: #fff; }
+
+.btn__dark {
+  background: #2a2a2a;
+  border: 2px solid #2a2a2a;
+  transition: all 0.2s ease; }
+  .btn__dark:hover {
+    background: #fff;
+    color: #2a2a2a; }
+
+.btn__light {
+  background: #fff;
+  color: #2a2a2a;
+  border: 2px solid #2a2a2a;
+  transition: all 0.2s ease; }
+  .btn__light:hover {
+    background: #ddd;
+    border-color: #ddd; }
+
+/*---------- HEADING ----------*/
+.heading-h1 {
+  font-family: "Cedarville Cursive", cursive; }
+
+.heading-h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 100vw; }
+
+/*---------- NAV ----------*/
+.nav {
+  background-color: #ddd;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+  .nav__left .logo__container {
+    width: 7rem;
+    height: 3rem;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav__left .logo__container .logo {
+      font-size: 1.3rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+  .nav__left .nav__container {
+    display: flex;
+    gap: 1.3rem; }
+    .nav__left .nav__container .nav__items {
+      font-weight: 700;
+      letter-spacing: 0.5px; }
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem; }
+  .nav__right .search {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav__right .search__input {
+      padding: 1rem 2rem;
+      border-radius: 100px;
+      border: none; }
+      .nav__right .search__input::placeholder {
+        color: #aaa; }
+    .nav__right .search__btn {
+      background: none;
+      margin-left: -5rem; }
+      .nav__right .search__btn .search-icon {
+        font-size: 1.7rem;
+        color: #aaa; }
+  .nav__right .btn__nav {
+    text-transform: capitalize;
+    font-weight: 700; }
+    .nav__right .btn__nav:nth-child(2) {
+      background: #777;
+      transition: all 0.2s ease; }
+      .nav__right .btn__nav:nth-child(2):hover {
+        background: #2a2a2a; }
+    .nav__right .btn__nav:nth-child(3) {
+      background: none;
+      color: #777;
+      padding: 0; }
+      .nav__right .btn__nav:nth-child(3):hover {
+        color: #2a2a2a; }
+
+/*---------- HEADER ----------*/
+.header {
+  padding: 12rem 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: #fafafa; }
+  .header__info {
+    width: Min(90%, 55rem); }
+  .header .heading-h1 {
+    margin-bottom: 5rem; }
+  .header .btn__dark {
+    margin-right: 1rem; }
+  .header__img {
+    width: Min(90%, 48rem);
+    overflow: hidden; }
+    .header__img img {
+      width: 100%; }
+
+/*---------- FEATURE ----------*/
+.feature {
+  width: 80%;
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .feature .feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 3rem;
+    margin-bottom: 7rem; }
+  .feature .heading-h2 {
+    grid-column: 1 / -1; }
+  .feature .cards {
+    width: 28rem;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.08); }
+    .feature .cards__img {
+      height: 20rem;
+      overflow: hidden;
+      position: relative; }
+      .feature .cards__img img {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .feature .cards__info {
+      padding: 3rem 2rem 2rem 2rem; }
+      .feature .cards__info .cards__text-box {
+        display: flex;
+        justify-content: space-between; }
+        .feature .cards__info .cards__text-box .course-name {
+          display: inline-block;
+          text-decoration: none;
+          color: #2a2a2a;
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+          cursor: pointer; }
+          .feature .cards__info .cards__text-box .course-name:hover {
+            color: #f14949; }
+        .feature .cards__info .cards__text-box .cards__description {
+          font-size: 1.6rem;
+          color: #777;
+          margin-bottom: 5rem; }
+    .feature .cards__rates {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 1.5rem; }
+    .feature .cards__rate {
+      display: flex;
+      align-items: center; }
+      .feature .cards__rate .cards__number {
+        color: #aaa;
+        margin-left: 0.5rem; }
+    .feature .cards .btn__cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background: #2a2a2a;
+      font-size: 1.6rem;
+      font-family: inherit;
+      padding: 1.5rem 2rem;
+      transition: all 0.2s ease; }
+      .feature .cards .btn__cart:hover {
+        background: #f14949; }
+      .feature .cards .btn__cart .icon {
+        font-size: 2rem;
+        margin-right: 1rem; }
+      .feature .cards .btn__cart span {
+        margin-left: 1.5rem;
+        margin-right: 0.5rem; }
+
+/*---------- TESTIMONIALS ----------*/
+.testimonials {
+  background-color: #ddd;
+  padding: 4rem 8rem; }
+  .testimonials .testimonial {
+    display: flex;
+    gap: 2rem; }
+    .testimonials .testimonial__cards {
+      max-width: 40rem;
+      background-color: #fff;
+      border-radius: 12px;
+      display: flex;
+      padding: 2rem 3rem; }
+    .testimonials .testimonial__author {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 3rem;
+      text-align: center;
+      width: 10rem; }
+      .testimonials .testimonial__author .author-name {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-bottom: 5px; }
+      .testimonials .testimonial__author .joined-course {
+        font-size: 1.2rem;
+        color: #aaa; }
+  .testimonials .author-img {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-bottom: 1rem; }
+    .testimonials .author-img img {
+      width: 100%; }
+
+/*---------- FOOTER ----------*/

@@ -1,0 +1,302 @@
+/*---------- NAV ----------*/
+.nav {
+  background-color: $color-primary;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .logo__container {
+    width: 7rem;
+    height: 3rem;
+    background-color: $color-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      font-size: 1.3rem;
+      color: $color-white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  .nav__container {
+    display: flex;
+    gap: 1.3rem;
+
+    .nav__items {
+      font-weight: $fw-bold;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__input {
+      padding: 1rem 2rem;
+      border-radius: 100px;
+      border: none;
+
+      &::placeholder {
+        color: $color-secondary;
+      }
+    }
+
+    &__btn {
+      background: none;
+      margin-left: -5rem;
+
+      .search-icon {
+        font-size: 1.7rem;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  .btn__nav {
+    text-transform: capitalize;
+    font-weight: $fw-bold;
+
+    &:nth-child(2) {
+      background: $color-tertiary;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: $color-black;
+      }
+    }
+
+    &:nth-child(3) {
+      background: none;
+      color: $color-tertiary;
+      padding: 0;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+/*---------- HEADER ----------*/
+
+.header {
+  padding: 12rem 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: $color-primary-light;
+
+  &__info {
+    width: Min(90%, 55rem);
+  }
+
+  .heading-h1 {
+    margin-bottom: 5rem;
+  }
+
+  .btn__dark {
+    margin-right: 1rem;
+  }
+
+  &__img {
+    width: Min(90%, 48rem);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*---------- FEATURE ----------*/
+
+.feature {
+  width: 80%;
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  .heading-h2 {
+    grid-column: 1 / -1;
+  }
+
+  .cards {
+    width: 28rem;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary-light;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.08);
+
+    &__img {
+      height: 20rem;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__info {
+      padding: 3rem 2rem 2rem 2rem;
+
+      .cards__text-box {
+        display: flex;
+        justify-content: space-between;
+
+        .course-name {
+          display: inline-block;
+          text-decoration: none;
+          color: $color-black;
+          font-weight: $fw-bold;
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-brand;
+          }
+        }
+
+        .cards__description {
+          font-size: 1.6rem;
+          color: $color-tertiary;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+
+    &__rates {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    &__rate {
+      display: flex;
+      align-items: center;
+
+      .cards__number {
+        color: $color-secondary;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .btn__cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background: $color-black;
+      font-size: 1.6rem;
+      font-family: inherit;
+      padding: 1.5rem 2rem;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: $color-brand;
+      }
+
+      .icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+
+      span {
+        margin-left: 1.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+/*---------- TESTIMONIALS ----------*/
+.testimonials {
+  background-color: $color-primary;
+  padding: 4rem 8rem;
+
+  .testimonial {
+    display: flex;
+    gap: 2rem;
+
+    &__cards {
+      max-width: 40rem;
+      background-color: $color-white;
+      border-radius: 12px;
+      display: flex;
+      padding: 2rem 3rem;
+    }
+
+    &__author {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 3rem;
+      text-align: center;
+      width: 10rem;
+
+      .author-name {
+        font-weight: $fw-bold;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+      }
+
+      .joined-course {
+        font-size: 1.2rem;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  .author-img {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*---------- FOOTER ----------*/
